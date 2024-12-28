@@ -1,0 +1,11 @@
+RewriteEngine on
+
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+RewriteRule ^(blog+) blog-posts.php
+RewriteRule ^(about-us+) about-us.php
+RewriteRule ^(blog+) blog-posts.php
+RewriteRule ^(contact+) contact.php
+RewriteRule ^(team+) team.php
+
+RewriteRule ^blog/([^/]+)$ blog-post-details.php?slug=$1 [L]
